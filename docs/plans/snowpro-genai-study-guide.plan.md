@@ -17,7 +17,8 @@ documentation references.
 
 ## Metadata
 - **Complexity**: Medium
-- **Source PRD**: `reference/SnowProGenAIStudyGuideC02.pdf`
+- **Source PRD**: `docs/reference/SnowProGenAIStudyGuideC02.pdf`
+- **Output Directory**: repo root (`/`) — all study guide files created at the top level
 - **Phase**: standalone
 - **Estimated Files**: 6 (index + 4 domain files + sample questions)
 
@@ -58,10 +59,23 @@ documentation references.
 - Video content or slide decks
 - Topics outside the C02 exam scope
 
+## Validation Approach
+Before starting implementation, extract the full objective checklist from the source PDF
+(every numbered bullet under each domain). Use this checklist as the validation artifact:
+after writing each domain file, confirm every extracted bullet has a corresponding section
+or paragraph. Cross-reference key claims (function names, role names, parameter names)
+against current Snowflake documentation using `cortex search docs` to verify accuracy.
+
 ## Step-By-Step Tasks
 
+### Task 0: Extract Objective Checklist
+- **ACTION**: Read the source PDF and extract every numbered objective bullet into a
+  checklist file (`docs/reference/objective-checklist.md`)
+- **IMPLEMENT**: One checkbox per bullet, grouped by domain/objective number
+- **VALIDATE**: Checklist count matches PDF bullet count; used as validation artifact for Tasks 2-6
+
 ### Task 1: Create README.md (index)
-- **ACTION**: Write the top-level index file
+- **ACTION**: Write `README.md` in the repo root
 - **IMPLEMENT**: Exam overview (format, question count if known, passing criteria), domain
   weightings table, links to each domain file, study tips
 - **VALIDATE**: All 4 domain files linked, weightings match PDF (18/38/29/15%)
@@ -75,7 +89,7 @@ documentation references.
 - **EXAM FOCUS**: Differentiation between Cortex Search vs Analyst vs Agents vs Intelligence,
   when to use each interface, cross-region parameter name and considerations
 - **REFERENCES**: Cortex docs, Model Registry docs, Cross-Region Inference docs
-- **VALIDATE**: Every bullet from PDF objectives 1.1 and 1.2 addressed
+- **VALIDATE**: Every bullet from PDF objectives 1.1 and 1.2 checked off in objective-checklist.md; key claims verified against `cortex search docs`
 
 ### Task 3: Domain 2 — Snowflake Gen AI Functions (38%)
 - **ACTION**: Write `domain-2-gen-ai-functions.md`
@@ -87,7 +101,7 @@ documentation references.
   Cortex Analyst VQR + custom instructions, performance considerations (model selection,
   provisioned throughput), SPCS setup steps
 - **REFERENCES**: AISQL function docs, SPCS tutorials, Model Registry docs, Streamlit docs
-- **VALIDATE**: All functions listed in PDF are covered with use-case context
+- **VALIDATE**: All functions listed in PDF are covered with use-case context; objectives 2.1-2.5 checked off in objective-checklist.md
 
 ### Task 4: Domain 3 — Snowflake Gen AI Governance (29%)
 - **ACTION**: Write `domain-3-gen-ai-governance.md`
@@ -98,7 +112,7 @@ documentation references.
   CORTEX_EMBED_USER), which usage history view for which service, guardrails vs AI_REDACT
   distinction, cost optimization strategies per service
 - **REFERENCES**: Access control docs, cost views docs, AI Observability docs
-- **VALIDATE**: All roles, views, and governance concepts from PDF addressed
+- **VALIDATE**: All roles, views, and governance concepts from PDF addressed; objectives 3.1-3.4 checked off in objective-checklist.md
 
 ### Task 5: Domain 4 — Snowflake Document Processing (15%)
 - **ACTION**: Write `domain-4-document-processing.md`
@@ -110,17 +124,19 @@ documentation references.
   use case distinction (see sample question 3 from exam), pipeline pattern with Streams+Tasks,
   arctic-extract fine-tuning purpose
 - **REFERENCES**: AI_PARSE_DOCUMENT docs, AI_EXTRACT docs, Streams/Tasks docs
-- **VALIDATE**: Sample question 3 pattern is clearly taught
+- **VALIDATE**: Sample question 3 pattern is clearly taught; objectives 4.1-4.4 checked off in objective-checklist.md
 
 ### Task 6: Sample Questions
 - **ACTION**: Write `sample-questions.md`
 - **IMPLEMENT**: Include the 5 sample questions from the official PDF with explained answers,
-  then generate additional practice questions (5-10 per domain) in the same style
+  then generate 5 additional practice questions per domain (20 total) in the same style
 - **EXAM FOCUS**: Scenario-based questions testing decision-making, not just recall
 - **VALIDATE**: Each question maps to a specific objective, correct answers have clear justification
 
 ## Testing Strategy
-- Manual review: each PDF objective bullet has corresponding coverage
+- Objective checklist: every PDF bullet checked off in `docs/reference/objective-checklist.md`
+- Accuracy verification: key claims (function names, roles, parameters) cross-referenced against
+  current Snowflake documentation via `cortex search docs`
 - Cross-reference: documentation links are valid topic references
 - Sample question alignment: study content would prepare someone to answer the sample questions
 
@@ -138,3 +154,4 @@ documentation references.
 | Documentation links become stale | Medium | Low | Use topic-based references rather than exact URLs |
 | Exam content evolves beyond April 2026 guide | Low | Medium | Plan is based on C02 version; note version in README |
 | Depth imbalance across domains | Medium | Medium | Use exam weightings to calibrate content volume |
+| Content accuracy drift from current Snowflake features | Medium | High | Cross-reference key claims against live docs using `cortex search docs` during authoring; flag items with low confidence for manual verification |
