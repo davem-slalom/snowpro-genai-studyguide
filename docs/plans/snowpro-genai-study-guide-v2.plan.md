@@ -62,6 +62,18 @@ documentation references.
 | `sample-questions.md` | repo root | Practice questions with explained answers |
 | `objective-checklist.md` | `docs/reference/` | Validation artifact (not a study deliverable) |
 
+## Execution Mode: Update, Not Greenfield
+All target files already exist and are populated (README, four domain files, sample-questions,
+and `docs/reference/objective-checklist.md`). This plan runs as a **verification-and-patch pass**,
+not a from-scratch build. Apply these preconditions to every task in "Step-By-Step Tasks":
+- **If the file exists**: audit it against the objective checklist and the EXAM FOCUS items,
+  then patch only the gaps. Do not rewrite or regenerate a file wholesale.
+- **If the file is missing**: create it as described.
+- **Preserve existing verified content** — especially the already-committed verified
+  documentation hyperlinks. Do not discard prior work during a patch.
+- **Safety**: work on a feature branch and `git diff` any modified file against its current
+  version before committing, so no verified content is silently lost.
+
 ## NOT Building
 - Full documentation reproductions (reference links instead)
 - Hands-on lab walkthroughs
@@ -170,3 +182,4 @@ against current Snowflake documentation using `cortex search docs` to verify acc
 | Depth imbalance across domains | Medium | Medium | Use exam weightings to calibrate content volume |
 | Content accuracy drift from current Snowflake features | Medium | High | Cross-reference key claims against live docs using `cortex search docs` during authoring; flag items with low confidence for manual verification |
 | Exam format metadata missing from PDF | Medium | Low | Verify via `cortex search docs`; omit and note as unspecified if unconfirmed (see Task 1 fallback) |
+| Overwriting existing verified content during regeneration | Medium | High | Run as a verification-and-patch pass (see Execution Mode); work on a branch and `git diff` modified files against current versions before committing |
