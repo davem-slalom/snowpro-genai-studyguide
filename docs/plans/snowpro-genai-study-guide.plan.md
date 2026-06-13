@@ -41,7 +41,8 @@ documentation references.
 - Each objective (1.1, 1.2, etc.) gets its own section
 - "Key Distinctions" callouts for topics where exam questions test differentiation
 - "Exam Tip" notes for common traps and decision frameworks
-- Documentation references as inline links or reference-style links
+- Documentation references as verified hyperlinks (real `docs.snowflake.com` URLs sourced via
+  `cortex search docs`, never guessed) in each domain file's reference section
 
 ## Files To Create
 | File | Purpose |

@@ -113,8 +113,8 @@ Stage (directory table) → Stream (new files) → Task (AI_PARSE_DOCUMENT / AI_
 ---
 
 ## Documentation References
-- AI_PARSE_DOCUMENT (+ Arguments) · Parsing Documents · Working with Documents in Snowflake Cortex
-- AI_EXTRACT · Document Extraction · Cortex AI Functions: Documents
-- Introduction to Streams · Introduction to Data Pipelines
-- Fine-tuning Arctic-Extract Models (+ Syntax) · Cortex Fine-tuning
-- Ask Questions to Your Own Documents with Cortex Search (Developer Guide)
+- [AI_PARSE_DOCUMENT (Parsing Documents)](https://docs.snowflake.com/en/user-guide/snowflake-cortex/parse-document)
+- [AI_EXTRACT / Document Extraction](https://docs.snowflake.com/en/user-guide/snowflake-cortex/document-extraction)
+- [GET_PRESIGNED_URL](https://docs.snowflake.com/en/sql-reference/functions/get_presigned_url)
+- [Introduction to Streams](https://docs.snowflake.com/en/user-guide/streams-intro) · [Introduction to Tasks / Data Pipelines](https://docs.snowflake.com/en/user-guide/tasks-intro)
+- [Arctic-Extract Fine-tuning](https://docs.snowflake.com/en/user-guide/snowflake-cortex/arctic-extract-finetuning) · [Cortex Fine-tuning](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-finetuning)

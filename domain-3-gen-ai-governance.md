@@ -125,10 +125,9 @@ Evaluate and monitor the quality of Gen AI applications (RAG, agents, LLM apps) 
 ---
 
 ## Documentation References
-- Overview of Access Control · Governance Overview · Control Model Access · Cortex LLM Allowlist
-- LLM Functions — Required Privileges / Limiting Access to Specific Roles · Snowflake Database Roles
-- GRANT DATABASE ROLE · REVOKE PRIVILEGE on APPLICATION ROLE · Cortex Analyst — Required Privileges
-- LLM Functions — Cortex Guard · AI_REDACT / Redact PII · Opting Out (ACCOUNTADMIN and AI Features)
-- Cost: Cortex Search — Cost Categories/Costs · Cortex Analyst — Cost Considerations · Model Registry — Cost Considerations · Complete Structured Outputs — Cost Considerations · Cortex Agents — Cost Considerations
-- Usage views: CORTEX_SEARCH_DAILY_USAGE_HISTORY (Columns) · CORTEX_FUNCTIONS_USAGE_HISTORY
-- AI Observability — Key Concepts / Reference / Evaluation Metrics · Evaluate AI Applications · TruLens (Blog) · LLM-as-a-Judge RAG Triad Metrics (Blog)
+- [Privileges & Model Access for Cortex AI Functions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql-privileges-and-access) (allowlist, `CORTEX_USER`, RBAC, required privileges)
+- [Cortex AI Guardrails (Cortex Guard)](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-ai-guardrails) · [AI_REDACT](https://docs.snowflake.com/en/sql-reference/functions/ai_redact)
+- [Cross-Region Inference](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference)
+- Cost: [AISQL Cost Management](https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-func-cost-management) · [Cortex Search Costs](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-costs) · [Cost Attribution / Object Tagging](https://docs.snowflake.com/en/user-guide/cost-attributing)
+- Usage views: [METERING_DAILY_HISTORY](https://docs.snowflake.com/en/sql-reference/account-usage/metering_daily_history) · [CORTEX_ANALYST_USAGE_HISTORY](https://docs.snowflake.com/en/sql-reference/account-usage/cortex_analyst_usage_history) · [CORTEX_SEARCH_DAILY_USAGE_HISTORY](https://docs.snowflake.com/en/sql-reference/account-usage/cortex_search_daily_usage_history)
+- [AI Observability](https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-observability) · [AI Observability Reference (metrics, TruLens)](https://docs.snowflake.com/en/user-guide/snowflake-cortex/ai-observability/reference)

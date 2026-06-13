@@ -195,10 +195,11 @@ Govern, version, and serve models for SQL/Python calls.
 ---
 
 ## Documentation References
-- Snowflake Cortex AI Functions (AISQL) · Snowflake Cortex LLM Functions · Choosing a Model
-- AI_COMPLETE / COMPLETE (incl. Multimodal, Complete Structured Outputs) · TRY_COMPLETE
-- AI_CLASSIFY · AI_EXTRACT · AI_PARSE_DOCUMENT · AI_SENTIMENT · AI_SUMMARIZE_AGG · AI_REDACT · AI_EMBED · AI_COUNT_TOKENS
-- VECTOR_INNER_PRODUCT · VECTOR_L1/L2_DISTANCE · VECTOR_COSINE_SIMILARITY · Vector Embeddings / Data Types
-- Cortex Analyst · VQR · Custom Instructions · Semantic Search Integration · Cortex Analyst REST API
-- Provisioned Throughput · Cortex Guard · About Streamlit in Snowflake
-- Snowpark Container Services Overview · SPCS Tutorial 1 · Model Registry Overview · Fine-Tuning an LLM in SPCS with AutoTrain
+- [Snowflake Cortex AISQL Functions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql) · [Choosing a Model / Cortex Playground](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-playground) · [Provisioned Throughput](https://docs.snowflake.com/en/user-guide/snowflake-cortex/provisioned-throughput)
+- [AI_COMPLETE](https://docs.snowflake.com/en/sql-reference/functions/ai_complete) · [Complete Structured Outputs](https://docs.snowflake.com/en/user-guide/snowflake-cortex/complete-structured-outputs) · [TRY_COMPLETE](https://docs.snowflake.com/en/sql-reference/functions/try_complete-snowflake-cortex)
+- [AI_CLASSIFY](https://docs.snowflake.com/en/sql-reference/functions/ai_classify) · [AI_EXTRACT / Document Extraction](https://docs.snowflake.com/en/user-guide/snowflake-cortex/document-extraction) · [AI_PARSE_DOCUMENT](https://docs.snowflake.com/en/user-guide/snowflake-cortex/parse-document) · [AI_SENTIMENT](https://docs.snowflake.com/en/sql-reference/functions/ai_sentiment)
+- [AI_SUMMARIZE_AGG](https://docs.snowflake.com/en/sql-reference/functions/ai_summarize_agg) · [AI_TRANSLATE](https://docs.snowflake.com/en/sql-reference/functions/ai_translate) · [AI_AGG](https://docs.snowflake.com/en/sql-reference/functions/ai_agg) · [AI_FILTER](https://docs.snowflake.com/en/sql-reference/functions/ai_filter) · [AI_SIMILARITY](https://docs.snowflake.com/en/sql-reference/functions/ai_similarity) · [AI_TRANSCRIBE](https://docs.snowflake.com/en/sql-reference/functions/ai_transcribe) · [AI_REDACT](https://docs.snowflake.com/en/sql-reference/functions/ai_redact)
+- [AI_EMBED](https://docs.snowflake.com/en/sql-reference/functions/ai_embed) · [AI_COUNT_TOKENS](https://docs.snowflake.com/en/sql-reference/functions/ai_count_tokens) · [SPLIT_TEXT_RECURSIVE_CHARACTER](https://docs.snowflake.com/en/sql-reference/functions/split_text_recursive_character-snowflake-cortex) · [VECTOR_COSINE_SIMILARITY](https://docs.snowflake.com/en/sql-reference/functions/vector_cosine_similarity) · [Vector Embeddings](https://docs.snowflake.com/en/user-guide/snowflake-cortex/vector-embeddings)
+- [Cortex Analyst](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst) · [Verified Query Repository](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst/verified-query-repository) · [Custom Instructions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst/custom-instructions)
+- [Cortex Search Overview](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview) · [About Streamlit in Snowflake](https://docs.snowflake.com/en/developer-guide/streamlit/about-streamlit)
+- [Snowpark Container Services Overview](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview) · [Model Registry Overview](https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview)

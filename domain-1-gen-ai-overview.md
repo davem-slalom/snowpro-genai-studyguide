@@ -153,10 +153,11 @@ agent's knowledge with third-party or proprietary content without copying data.
 ---
 
 ## Documentation References
-- Snowflake Cortex LLM Functions / AISQL overview
-- Cortex Search Overview · Cortex Analyst · Cortex Agents
-- Cortex Analyst — Custom Instructions · YAML spec for semantic views · Semantic Views Autopilot
-- Model Registry Overview · Model Registry — Bring Your Own Model Types · Snowflake ML Overview
-- Cortex Code in Snowsight · Cortex Code CLI (Key Features, Commands, Session Management)
-- Cross-Region Inference · Model Context Protocol (MCP) for Cortex Agents
-- Cortex Knowledge Extensions Overview · Snowflake Copilot Inline · Vector Embeddings
+- [Snowflake Cortex AISQL / LLM Functions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/aisql)
+- [Cortex Search Overview](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-search/cortex-search-overview)
+- [Cortex Analyst](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst) · [Custom Instructions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-analyst/custom-instructions) · [Semantic View YAML Spec](https://docs.snowflake.com/en/user-guide/views-semantic/semantic-view-yaml-spec)
+- [Cortex Agents](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents) · [Snowflake AI Features Overview (Intelligence)](https://docs.snowflake.com/en/guides-overview-ai-features)
+- [Model Registry Overview](https://docs.snowflake.com/en/developer-guide/snowflake-ml/model-registry/overview) · [Snowpark Container Services Overview](https://docs.snowflake.com/en/developer-guide/snowpark-container-services/overview)
+- [Cortex Code](https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code) · [MCP for Cortex Code/Agents](https://docs.snowflake.com/en/user-guide/cortex-code/cortex-code-mcp)
+- [Cross-Region Inference](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cross-region-inference) · [Cortex Knowledge Extensions](https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-knowledge-extensions/cke-overview)
+- [Snowflake Copilot](https://docs.snowflake.com/en/user-guide/snowflake-copilot) · [Vector Embeddings](https://docs.snowflake.com/en/user-guide/snowflake-cortex/vector-embeddings)
